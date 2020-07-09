@@ -74,6 +74,7 @@ Plug 'morhetz/gruvbox'
 Plug 'w0ng/vim-hybrid'
 Plug 'tpope/vim-vividchalk'
 Plug 'lokaltog/vim-distinguished'
+Plug 'tomasr/molokai'
 
 " auto-close (for parenthesis)
 " TODO: broken, since clang_complete
@@ -85,9 +86,6 @@ Plug 'lokaltog/vim-distinguished'
 
 " glsl color
 Plug 'tikhomirov/vim-glsl'
-
-" debugger
-"Plug 'critiqjo/lldb.nvim'
 
 " icons
 Plug 'ryanoasis/vim-devicons'
@@ -346,7 +344,7 @@ noremap <c-r> <NOP>
  
 syntax on
 set background=dark
-colorscheme hybrid 
+colorscheme molokai
 
 " enable 256bit colors - also: override gnome-terminal's settings
 set t_Co=256
