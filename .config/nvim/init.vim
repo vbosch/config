@@ -48,6 +48,7 @@ Plug 'edkolev/promptline.vim'
 
 " enhanced highlight
 Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'frazrepo/vim-rainbow'
 
 " ctags indexer
 Plug 'vim-scripts/DfrankUtil'
@@ -106,7 +107,7 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 let g:cpp_member_variable_highlight = 1
 let g:cpp_member_variable_highlight = 1
 let g:cpp_class_decl_highlight = 1
-
+let g:rainbow_active = 1
 
 "==================== COC =============================
 "
