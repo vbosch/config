@@ -2,6 +2,10 @@
     "diagnostic.errorSign": "🤬",
     "diagnostic.warningSign": "💩",
     "diagnostic.infoSign": "🤖",
+    "eslint.filetypes": ["javascript", "typescript", "typescriptreact", "javascriptreact"],
+    "eslint.packageManager": "yarn",
+    "eslint.autoFixOnSave": true, 
+    "coc.preferences.formatOnSaveFiletypes": ["css", "markdown"],
     "languageserver": {
         "ccls": {
           "command": "ccls",

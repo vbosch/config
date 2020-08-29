@@ -61,6 +61,8 @@ Plug 'vim-scripts/indexer.tar.gz'
 " easy motion
 Plug 'easymotion/vim-easymotion'
 
+Plug 'ianks/vim-tsx'
+Plug 'leafgarland/typescript-vim'
 
 
 " A - for switching between source and header files
@@ -94,7 +96,8 @@ call plug#end()
 
 
 " ================ Suggestions ======================
- 
+au BufNewFile,BufRead *.ts setlocal filetype=typescript
+au BufNewFile,BufRead *.tsx setlocal filetype=typescript.tsx
 " show wild menu (menu of suggestions) when typing commands in command mode
 set path+=**
 set wildmenu
@@ -113,7 +116,8 @@ let g:rainbow_active = 1
 "
 " TextEdit might fail if hidden is not set.
 set hidden
-
+" coc extensions
+let g:coc_global_extensions = ['coc-eslint', 'coc-tsserver', 'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-yank', 'coc-prettier']
 " Some servers have issues with backup files, see #649.
 set nobackup
 set nowritebackup
