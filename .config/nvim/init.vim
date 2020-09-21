@@ -118,6 +118,7 @@ let g:rainbow_active = 1
 set hidden
 " coc extensions
 let g:coc_global_extensions = ['coc-eslint', 'coc-tsserver', 'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-yank', 'coc-prettier']
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
 " Some servers have issues with backup files, see #649.
 set nobackup
 set nowritebackup
