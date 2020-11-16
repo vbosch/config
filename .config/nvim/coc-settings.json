@@ -1,24 +1,43 @@
 {
-    "diagnostic.errorSign": "🤬",
-    "diagnostic.warningSign": "💩",
-    "diagnostic.infoSign": "🤖",
-    "eslint.filetypes": ["javascript", "typescript", "typescriptreact", "javascriptreact"],
-    "eslint.packageManager": "yarn",
-    "eslint.autoFixOnSave": true, 
-    "coc.preferences.formatOnSaveFiletypes": ["css", "markdown","javascript","javascriptreact","typescript","typescriptreact","json","graphql"],
-    "languageserver": {
-        "ccls": {
-          "command": "ccls",
-          "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"],
-          "rootPatterns": [".ccls", "compile_commands.json", ".git/", ".hg/"],
-          "initializationOptions": {
-              "cache": {
-                  "directory": "/tmp/ccls"
-             },
-             "client": {
-                 "snippetSupport": true
-             }
-          }
+  "diagnostic.errorSign": "🤬",
+  "diagnostic.warningSign": "💩",
+  "diagnostic.infoSign": "🤖",
+  "eslint.filetypes": [
+    "javascript",
+    "typescript",
+    "typescriptreact",
+    "javascriptreact"
+  ],
+  "eslint.packageManager": "yarn",
+  "eslint.autoFixOnSave": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "markdown",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "json",
+    "graphql"
+  ],
+  "languageserver": {
+    "terraform": {
+      "command": "terraform-lsp",
+      "filetypes": ["terraform", "tf"],
+      "initializationOptions": {}
+    },
+    "ccls": {
+      "command": "ccls",
+      "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"],
+      "rootPatterns": [".ccls", "compile_commands.json", ".git/", ".hg/"],
+      "initializationOptions": {
+        "cache": {
+          "directory": "/tmp/ccls"
+        },
+        "client": {
+          "snippetSupport": true
         }
+      }
     }
+  }
 }

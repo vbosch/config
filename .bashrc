@@ -125,3 +125,6 @@ export NVM_DIR="$HOME/.nvm"
 
 # Created by `userpath` on 2020-06-23 16:52:57
 export PATH="$PATH:/home/vbosch/.local/bin"
+
+source ~/.promptline.sh
+
